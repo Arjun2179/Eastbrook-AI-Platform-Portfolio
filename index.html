@@ -336,133 +336,189 @@
             <div class="section-header">
                 <span class="section-badge green">🎯 Solution</span>
                 <h2 class="section-title">Eastbrook AI Platform</h2>
-                <p class="section-subtitle">Three role-based interfaces — one unified platform for students, educators, and analysts</p>
+                <p class="section-subtitle">Layered architecture connecting business workflows, application services, and secure cloud delivery</p>
             </div>
 
             <div class="solution-content">
                 <div class="architecture-image">
-                    <img src="images/business-architecture.png" alt="Eastbrook Solution Architecture — Business, IS, and Technology layers">
+                    <img src="images/solution-architecture.png" alt="Eastbrook solution architecture showing business capabilities, IS applications, technology infrastructure, database tables, and representative API endpoints">
                     <div class="image-caption">
                         <i class="fas fa-diagram-project"></i>
-                        Three-Column Architecture: Business Capabilities → IS Architecture (Applications + Data) → Technology Infrastructure
+                        One architecture view ties together the top-layer business, IS, and technology architecture with the bottom-layer services, API contracts, and stack choices that implement it.
                     </div>
                 </div>
 
                 <div class="architecture-layers-inline">
-                    <h3 class="subsection-title"><i class="fas fa-layer-group"></i> 🏗️ System Architecture — Three-Layer Design</h3>
-                    <p class="architecture-desc">Separation of concerns across business outcomes, IS applications, and cloud technology</p>
+                    <h3 class="subsection-title"><i class="fas fa-layer-group"></i> 🏗️ Architecture Reading Guide</h3>
+                    <p class="architecture-desc">The diagram makes the platform traceable from business capability, to application service, to security and hosting, and finally down to the exact tables and representative routes that make the experience work.</p>
                     <div class="architecture-layers">
                         <div class="layer-card">
                             <div class="layer-icon"><i class="fas fa-briefcase"></i></div>
                             <h4>Business Architecture</h4>
-                            <p>Student AI interaction tracking, verification recommendations, wellness monitoring, policy analysis, data-driven insights, and educator reports</p>
+                            <p>Student AI behavior tracking, AI verification monitoring, physical wellness monitoring, educator risk intervention, policy and compliance analysis, and analyst KPI reporting.</p>
                         </div>
                         <div class="layer-card">
                             <div class="layer-icon"><i class="fas fa-cubes"></i></div>
                             <h4>IS Architecture</h4>
-                            <p>User behavior data (prompts, screen time, decision patterns), physical comfort metrics, demographic data, REST API, and Neon PostgreSQL data layer</p>
+                            <p>Node.js REST API with Express.js, a Python analytics engine for synthetic dataset processing, Neon PostgreSQL, and a React 19 + TypeScript UI built with Vite, React Router DOM v7, Recharts, and Lucide React Icons.</p>
                         </div>
                         <div class="layer-card">
-                            <div class="layer-icon"><i class="fas fa-code"></i></div>
-                            <h4>Tech. Infrastructure</h4>
-                            <p>Vercel Cloud, CDN Network, Serverless Functions, SSL/TLS Encryption, JWT-based Access Controls, Environment Variables</p>
+                            <div class="layer-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h4>Tech. Architecture</h4>
+                            <p>Vercel Cloud, Vercel Edge CDN, Vercel Serverless Functions, SPA routing, JWT role-based auth, Helmet.js, CORS, express-rate-limit, bcryptjs, and environment-variable-based deployment configuration.</p>
                         </div>
                         <div class="layer-card">
-                            <div class="layer-icon"><i class="fas fa-tools"></i></div>
-                            <h4>Tools &amp; Platforms (SBB)</h4>
-                            <p>Node.js REST API, Python Data Engine, Neon PostgreSQL, Next.js / TypeScript Dashboard, Mobile Responsive, Recharts, NumPy/Pandas</p>
+                            <div class="layer-icon"><i class="fas fa-sitemap"></i></div>
+                            <h4>Operational Contracts</h4>
+                            <p>The architecture names eight core tables and concrete public, student, educator, and analyst routes, so the role-based experience is grounded in explicit database and API contracts rather than a generic dashboard concept.</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="architecture-image" style="margin-top:40px;">
-                    <img src="images/tools-architecture.png" alt="Eastbrook Tools and Platforms Architecture — SBB diagram">
-                    <div class="image-caption">
-                        <i class="fas fa-tools"></i>
-                        Tools and Platforms Architecture (SBB) — full stack: Node.js → Python → Neon PostgreSQL · Recharts · NumPy/Pandas · JWT Auth · CrowdStrike
+                    <div class="architecture-meta-grid">
+                        <div class="architecture-meta-card">
+                            <h4><i class="fas fa-list-check"></i> Bottom-Layer Business Services</h4>
+                            <p>Student Session Logging, Educator Nudge System, Risk Alert Engine, Training Module Delivery, and AS-IS vs TO-BE Comparison are presented as the business-facing services enabled by the platform.</p>
+                        </div>
+                        <div class="architecture-meta-card">
+                            <h4><i class="fas fa-table"></i> Named Data Foundations</h4>
+                            <p>The architecture explicitly calls out <strong>profiles</strong>, <strong>student_day_metrics</strong>, <strong>student_sessions</strong>, <strong>training_modules</strong>, <strong>training_progress</strong>, <strong>risk_alerts</strong>, <strong>nudges</strong>, and <strong>educator_student_map</strong>.</p>
+                        </div>
+                        <div class="architecture-meta-card">
+                            <h4><i class="fas fa-route"></i> Role-Based API Surface</h4>
+                            <p>Public routes support overview and comparison, student routes support dashboard and training, educator routes support nudges and trends, and analyst routes support KPI monitoring and evaluation.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="features-showcase">
-                    <h3 class="subsection-title"><i class="fas fa-star"></i> 🔷 Three Role-Based Interfaces</h3>
+                    <h3 class="subsection-title"><i class="fas fa-star"></i> 🔷 Business Services Mapped from the Architecture</h3>
                     <div class="features-grid">
                         <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
-                            <h4>1️⃣ Student Portal</h4>
-                            <p><strong>"See how your AI use compares to the class baseline"</strong><br>Students log AI sessions, view their own behavior against baseline, complete training modules, respond to nudges, and track personal well-being progress over time.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                            <h4>2️⃣ Educator Console</h4>
-                            <p><strong>"Tell me who needs attention before it becomes a problem"</strong><br>Educators review risk, track cohort trends, inspect roster patterns, and send targeted nudges — all before patterns become chronic or require escalation.</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
-                            <h4>3️⃣ Analyst Dashboard</h4>
-                            <p><strong>"Show me whether the intervention is actually working"</strong><br>Analysts filter by phase, age group, reliance type, and time range to test whether the intervention logic improves the defined KPIs across the full 12,000-observation dataset.</p>
+                            <div class="feature-icon"><i class="fas fa-pen-to-square"></i></div>
+                            <h4>1️⃣ Student Session Logging</h4>
+                            <p><strong>Anchored by <code>POST /api/student/sessions</code></strong><br>Students record AI usage sessions that feed the <code>student_sessions</code> and <code>student_day_metrics</code> layer used for prompt volume, verification, and behavior tracking.</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon"><i class="fas fa-bell"></i></div>
-                            <h4>4️⃣ Nudge Engine</h4>
-                            <p><strong>25.6% measured positive effect</strong><br>Automated nudges target high-risk behavior patterns. When a student's verification rate drops below threshold or screen time exceeds limits, the system flags and notifies.</p>
+                            <h4>2️⃣ Educator Nudge System</h4>
+                            <p><strong>Driven by <code>POST /api/educator/nudges</code></strong><br>Educators can send targeted nudges based on behavior and wellness signals instead of waiting for end-of-cycle reporting.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h4>3️⃣ Risk Alert Engine</h4>
+                            <p><strong>Backed by <code>risk_alerts</code> and <code>educator_student_map</code></strong><br>The intervention model turns daily signals into routed alerts so educators see risk when it is actionable, not after it becomes chronic.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                            <h4>4️⃣ Training Module Delivery</h4>
+                            <p><strong>Implemented through <code>training_modules</code> and <code>training_progress</code></strong><br>Students move through guidance content while the platform keeps track of completion state and readiness for follow-up support.</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
                             <h4>5️⃣ AS-IS vs TO-BE Comparison</h4>
-                            <p><strong>Side-by-side KPI comparison view</strong><br>8 metrics compared across study phases: verification rate (+10.7 pts), automation bias (−10.7 pts), screen time (−0.8 hrs), eye dryness (−0.8), neck pain (−0.6).</p>
+                            <p><strong>Served through <code>GET /api/public/comparison</code></strong><br>The architecture explicitly preserves the comparison view as a public-facing capability for showing modeled KPI deltas across the two study phases.</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                            <h4>6️⃣ Safeguarding Risk Flags</h4>
-                            <p><strong>JWT-secured role-based access</strong><br>Serious-topic AI use, PII-sharing, and emotional support requests are surfaced only to appropriate staff. Secure RBAC ensures student privacy is maintained.</p>
+                            <h4>6️⃣ Role Routing &amp; Secure Access</h4>
+                            <p><strong>React Router DOM v7 + JWT role-based auth</strong><br>Public, student, educator, and analyst routes stay separated while Helmet.js, CORS, express-rate-limit, bcryptjs, and environment variables harden the deployment.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="tech-stack-detailed">
-                <h3 class="subsection-title"><i class="fas fa-cogs"></i> 🛠️ Technology Stack</h3>
+                <h3 class="subsection-title"><i class="fas fa-cogs"></i> 🛠️ Application, Data &amp; Security Stack</h3>
                 <div class="tech-cards">
                     <div class="tech-card">
                         <i class="fab fa-react"></i>
                         <div>
-                            <span>React + TypeScript</span>
-                            <small>Frontend UI</small>
+                            <span>React 19 + TypeScript</span>
+                            <small>Frontend UI with Vite</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <span>React Router DOM v7</span>
+                            <small>Role-based routing</small>
                         </div>
                     </div>
                     <div class="tech-card">
                         <i class="fab fa-node-js"></i>
                         <div>
-                            <span>Node.js + Express</span>
-                            <small>REST API backend</small>
-                        </div>
-                    </div>
-                    <div class="tech-card">
-                        <i class="fas fa-database"></i>
-                        <div>
-                            <span>PostgreSQL (Neon)</span>
-                            <small>Cloud database</small>
-                        </div>
-                    </div>
-                    <div class="tech-card">
-                        <i class="fas fa-cloud"></i>
-                        <div>
-                            <span>Vercel</span>
-                            <small>Auto-scaling deploy</small>
-                        </div>
-                    </div>
-                    <div class="tech-card">
-                        <i class="fas fa-chart-bar"></i>
-                        <div>
-                            <span>Recharts</span>
-                            <small>Data visualisation</small>
+                            <span>Node.js REST API</span>
+                            <small>Express.js backend</small>
                         </div>
                     </div>
                     <div class="tech-card">
                         <i class="fab fa-python"></i>
                         <div>
-                            <span>Python</span>
-                            <small>Data generation</small>
+                            <span>Python Analytics Engine</span>
+                            <small>Synthetic dataset processing</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-database"></i>
+                        <div>
+                            <span>Neon PostgreSQL</span>
+                            <small>Serverless data layer</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <span>Recharts + Lucide</span>
+                            <small>Data visualisation &amp; UI icons</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-cloud"></i>
+                        <div>
+                            <span>Vercel Cloud Stack</span>
+                            <small>Cloud, Edge CDN, Serverless Functions</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-lock"></i>
+                        <div>
+                            <span>Security Middleware</span>
+                            <small>JWT, Helmet, CORS, rate limits, bcryptjs</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-server"></i>
+                        <div>
+                            <span>SPA Deployment Model</span>
+                            <small><code>index.html</code> catch-all rewrite + env config</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-diagram-project"></i>
+                        <div>
+                            <span>Public / Student / Educator / Analyst</span>
+                            <small>API surface mirrors the role model</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-network-wired"></i>
+                        <div>
+                            <span>Connection Pool</span>
+                            <small>Neon pool configured to 8</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-plug"></i>
+                        <div>
+                            <span>Representative Endpoints</span>
+                            <small>Overview, sessions, nudges, trends, KPIs</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <span>Integrated Stack</span>
+                            <small>Business capabilities mapped directly to implementation</small>
                         </div>
                     </div>
                 </div>
@@ -544,77 +600,59 @@
                 </div>
 
                 <div class="erd-section">
-                    <img src="images/erd.png" alt="Entity Relationship Diagram — USER, USER_DAY, PHASE_CONFIG, VERIFICATION_COMPLEXITY_DIM, RELIANCE_TYPE_DIM">
+                    <img src="images/erd.png" alt="Entity Relationship Diagram for the synthetic analytics dataset showing USER, USER_DAY, PHASE_CONFIG, VERIFICATION_COMPLEXITY_DIM, and RELIANCE_TYPE_DIM">
                     <div class="image-caption">
                         <i class="fas fa-sitemap"></i>
-                        Entity Relationship Diagram — Core tables: USER ↔ USER_DAY (PK,FK: user_id + day) with phase, complexity, and reliance-type dimension tables
+                        Analytics-side ERD for the synthetic study dataset — USER ↔ USER_DAY with phase, complexity, and reliance-type dimensions. In the live prototype architecture, these analytics outputs are then surfaced through operational app tables such as profiles, student_sessions, and risk_alerts.
                     </div>
                 </div>
 
-                <div class="data-flow-section" style="margin-top: 50px; padding: 40px 30px; background: linear-gradient(135deg, var(--gray-800) 0%, rgba(15, 76, 117, 0.1) 100%); border-radius: var(--radius-lg); border: 1px solid var(--gray-700);">
-                    <h3 class="subsection-title" style="color: var(--white); text-align: center; margin-bottom: 40px;"><i class="fas fa-stream"></i> ⚙️ Data Flow Architecture</h3>
+                <div class="data-flow-section architecture-contracts">
+                    <h3 class="subsection-title" style="color: var(--white); text-align: center; margin-bottom: 16px;"><i class="fas fa-stream"></i> ⚙️ Architecture Contracts</h3>
+                    <p class="architecture-contracts-desc">The updated architecture specifies not only platform layers, but also the concrete tables and representative routes that connect the React frontend, Node.js API, Python analytics engine, and educator intervention workflows.</p>
 
-                    <div class="data-flow-container">
-                        <div class="flow-row">
-                            <div class="flow-card source">
-                                <div class="flow-icon"><i class="fab fa-python"></i></div>
-                                <h5>Python Generator</h5>
-                                <p>Synthetic Data</p>
+                    <div class="contract-grid">
+                        <div class="contract-card">
+                            <h4><i class="fas fa-database"></i> Core Database Tables</h4>
+                            <div class="chip-grid">
+                                <span class="chip">profiles</span>
+                                <span class="chip">student_day_metrics</span>
+                                <span class="chip">student_sessions</span>
+                                <span class="chip">training_modules</span>
+                                <span class="chip">training_progress</span>
+                                <span class="chip">risk_alerts</span>
+                                <span class="chip">nudges</span>
+                                <span class="chip">educator_student_map</span>
                             </div>
-                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-                            <div class="flow-card process">
-                                <div class="flow-icon"><i class="fas fa-file-csv"></i></div>
-                                <h5>CSV Dataset</h5>
-                                <p>12,000 rows · 34 fields</p>
-                            </div>
-                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-                            <div class="flow-card ui">
-                                <div class="flow-icon"><i class="fas fa-database"></i></div>
-                                <h5>Neon PostgreSQL</h5>
-                                <p>Production DB</p>
-                            </div>
+                            <p>These tables cover identity, daily metrics, intervention records, training state, and the educator-to-student relationships needed for targeted action.</p>
                         </div>
 
-                        <div class="flow-arrow-down"><i class="fas fa-long-arrow-alt-down"></i></div>
-
-                        <div class="flow-row features">
-                            <div class="flow-card feature">
-                                <div class="flow-icon"><i class="fas fa-user-graduate"></i></div>
-                                <h5>Student Portal</h5>
+                        <div class="contract-card">
+                            <h4><i class="fas fa-plug"></i> Representative API Endpoints</h4>
+                            <div class="endpoint-grid">
+                                <span class="endpoint-chip">GET /api/public/overview</span>
+                                <span class="endpoint-chip">GET /api/auth/me</span>
+                                <span class="endpoint-chip">GET /api/student/dashboard</span>
+                                <span class="endpoint-chip">POST /api/student/sessions</span>
+                                <span class="endpoint-chip">GET /api/student/training</span>
+                                <span class="endpoint-chip">POST /api/educator/nudges</span>
+                                <span class="endpoint-chip">GET /api/educator/trends</span>
+                                <span class="endpoint-chip">GET /api/analyst/dashboard</span>
+                                <span class="endpoint-chip">GET /api/analyst/kpis</span>
+                                <span class="endpoint-chip">GET /api/public/comparison</span>
                             </div>
-                            <div class="flow-card feature">
-                                <div class="flow-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                                <h5>Educator Console</h5>
-                            </div>
-                            <div class="flow-card feature">
-                                <div class="flow-icon"><i class="fas fa-chart-line"></i></div>
-                                <h5>Analyst Dashboard</h5>
-                            </div>
-                            <div class="flow-card feature">
-                                <div class="flow-icon"><i class="fas fa-exchange-alt"></i></div>
-                                <h5>Comparison View</h5>
-                            </div>
+                            <p>The route surface mirrors the architecture’s public, student, educator, and analyst responsibilities rather than treating the platform as a single undifferentiated dashboard.</p>
                         </div>
 
-                        <div class="flow-arrow-down"><i class="fas fa-long-arrow-alt-down"></i></div>
-
-                        <div class="flow-row">
-                            <div class="flow-card interaction">
-                                <div class="flow-icon"><i class="fas fa-hand-pointer"></i></div>
-                                <h5>User Actions</h5>
-                                <div class="interaction-tags">
-                                    <span>Login</span>
-                                    <span>Filter</span>
-                                    <span>Nudge</span>
-                                    <span>Compare</span>
-                                </div>
-                            </div>
-                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-                            <div class="flow-card database">
-                                <div class="flow-icon"><i class="fas fa-server"></i></div>
-                                <h5>Express REST API</h5>
-                                <p>JWT Auth · RBAC</p>
-                            </div>
+                        <div class="contract-card">
+                            <h4><i class="fas fa-user-shield"></i> Role &amp; Security Model</h4>
+                            <ul class="contract-list">
+                                <li>Public routes expose overview and AS-IS vs TO-BE comparison views.</li>
+                                <li>Student routes handle dashboards, session logging, and training delivery.</li>
+                                <li>Educator routes handle nudges, trends, and intervention follow-through.</li>
+                                <li>Analyst routes handle KPI reporting and evaluation logic.</li>
+                                <li>JWT role-based auth, Helmet.js, CORS, express-rate-limit, bcryptjs, and environment variables protect the application boundary.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

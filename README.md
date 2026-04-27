@@ -44,13 +44,20 @@ Eastbrook Youth AI Well-Being is a research-led case study on how generative AI 
 ## 🛠️ Tech Stack
 
 - **Portfolio:** HTML, CSS, JavaScript
-- **Platform UI:** React + TypeScript
-- **Backend:** Node.js + Express REST API
-- **Database:** PostgreSQL (Neon)
-- **Charts:** Recharts
-- **Data Generation:** Python (NumPy / Pandas)
-- **Deployment:** Vercel
-- **Authentication:** JWT + role-based access control
+- **Frontend UI:** React 19 + TypeScript, Vite, React Router DOM v7
+- **Backend API:** Node.js REST API with Express.js
+- **Analytics Engine:** Python processing for the synthetic dataset pipeline
+- **Database:** Neon PostgreSQL
+- **Visualisation & UI Libraries:** Recharts, Lucide React Icons
+- **Deployment:** Vercel Cloud, Edge CDN, Serverless Functions
+- **Security:** JWT role-based auth, Helmet.js, CORS, express-rate-limit, bcryptjs, environment variables
+
+## 🏗️ Architecture Highlights
+
+- **Business Architecture:** Student AI behavior tracking, verification monitoring, wellness monitoring, educator risk intervention, policy/compliance analysis, analyst KPI reporting
+- **IS Architecture:** React UI, Node.js REST API, Python analytics engine, Neon PostgreSQL, role-based routing, visualisation libraries
+- **Tech Architecture:** Vercel hosting, SPA routing, serverless functions, security middleware, and environment-based deployment configuration
+- **Operational Contracts:** Core tables include `profiles`, `student_day_metrics`, `student_sessions`, `training_modules`, `training_progress`, `risk_alerts`, `nudges`, and `educator_student_map`
 
 ## 📁 Portfolio Structure
 
@@ -66,8 +73,7 @@ Portfolio/
     ├── chart-setup.png
     ├── chart-verification.png
     ├── chart-strain.png
-    ├── business-architecture.png
-    ├── tools-architecture.png
+    ├── solution-architecture.png
     └── erd.png
 ```
 
@@ -76,7 +82,7 @@ Portfolio/
 - Responsive one-page layout
 - Sticky navigation and smooth scrolling
 - Animated counters and scroll-reveal effects
-- Architecture, ERD, and dashboard evidence sections
+- Updated architecture, ERD, and dashboard evidence sections
 - Static Vercel deployment with no build step
 
 ## 🚀 How to View
