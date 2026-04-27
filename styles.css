@@ -1102,10 +1102,8 @@ section {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 680px;
-    object-fit: contain;
+    padding: 16px;
     background: #fff;
-    padding: 24px;
 }
 
 .image-caption {
