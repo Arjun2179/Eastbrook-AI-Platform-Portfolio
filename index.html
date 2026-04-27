@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastbrook Youth AI Well-Being | Project Portfolio</title>
+    <meta name="description" content="Master's Research Project portfolio — evidence-based platform for student AI oversight, educator intervention, and youth well-being at Eastbrook.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      /* Eastbrook accent overrides */
+      :root {
+        --primary: #0f4c75;
+        --primary-dark: #0a3352;
+        --primary-light: #1a6fa8;
+        --accent-gold: #10b981;
+        --accent-gold-dark: #059669;
+        --gradient-gold: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        --shadow-gold-glow: 0 0 40px rgba(16, 185, 129, 0.3);
+      }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">Eastbrook Youth AI</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#problem" class="nav-link">Problem</a></li>
+                <li><a href="#solution" class="nav-link">Solution</a></li>
+                <li><a href="#data" class="nav-link">Data</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="https://eastbrook-ai-platform-dashboard-sol.vercel.app/" target="_blank" class="nav-link">Slide Deck</a></li>
+                <li><a href="https://eastbrook-ai-platform.vercel.app/" target="_blank" class="nav-cta">Live App <i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Eastbrook Youth</span>
+                    <span class="title-line gradient-text">AI Well-Being</span>
+                </h1>
+                <p class="hero-subtitle">Evidence-Based Platform for Student AI Oversight &amp; Educator Intervention</p>
+                <p class="hero-description">
+                    <em>Making student AI use <strong>visible, safer, and easier to intervene on.</strong></em><br><br>
+                    Eastbrook students generate over 14,000 AI prompts every school day, yet only 56% verify what AI tells them. This project combines a 12,000-observation dataset, a live analytics dashboard, and a role-based prototype to give educators earlier, data-driven visibility into who needs help before patterns become chronic.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://eastbrook-ai-platform.vercel.app/" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-play"></i> View Live App
+                    </a>
+                    <a href="#solution" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="400">0</span>
+                        <span class="stat-label">Students Observed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12000">0</span>
+                        <span class="stat-label">Observations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="14119">0</span>
+                        <span class="stat-label">Daily Prompts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="56">0</span>
+                        <span class="stat-label">% Verification Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="browser-url">eastbrook-ai-platform.vercel.app</div>
+                    </div>
+                    <div class="browser-content">
+                        <img src="images/image.png" alt="Eastbrook Youth AI platform landing page with student, educator, and analyst access cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#executive-summary">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="executive-summary" id="executive-summary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Overview</span>
+                <h2 class="section-title">Project Overview</h2>
+            </div>
+            <div class="summary-content">
+                <div class="summary-text">
+                    <p class="summary-lead">
+                        Eastbrook Youth AI Well-Being turns a silent classroom risk into a measurable, intervenable problem.
+                    </p>
+                    <p>
+                        Powered by <strong>React, Node.js, and PostgreSQL (Neon)</strong>, the solution covers <strong>400 students</strong> across <strong>12,000 structured observations</strong>, 34 data fields, and two study phases — AS-IS (baseline) and TO-BE (modeled intervention). Three role-based interfaces give students, educators, and analysts the right visibility at the right time.
+                    </p>
+                    <div class="highlight-text">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <strong>💡 Modeled Intervention Outcomes (TO-BE phase):</strong><br>
+                            • Verification rate: 56.0% → <strong>66.7%</strong> (+10.7 pts)<br>
+                            • Automation bias: 44.0% → <strong>33.3%</strong> (−10.7 pts)<br>
+                            • Daily screen time: 8.6 hrs → <strong>7.8 hrs</strong> (−0.8 hrs)<br>
+                            • Nudge success rate measured at <strong>25.6%</strong> positive effect
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-facts">
+                    <h3><i class="fas fa-bolt"></i> Dataset Metrics</h3>
+                    <ul class="facts-list">
+                        <li><i class="fas fa-users"></i> <strong>400</strong> students in study population</li>
+                        <li><i class="fas fa-table"></i> <strong>12,000</strong> student-day observations</li>
+                        <li><i class="fas fa-columns"></i> <strong>34</strong> fields per observation row</li>
+                        <li><i class="fas fa-robot"></i> <strong>14,119</strong> daily AI prompts (AS-IS baseline)</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>56.0%</strong> verification rate (AS-IS)</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <strong>23 students</strong> identified as dominant over-reliant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Banner -->
+    <section class="tech-banner">
+        <div class="container">
+            <div class="tech-scroll">
+                <div class="tech-item"><i class="fab fa-react"></i> React</div>
+                <div class="tech-item"><i class="fab fa-js"></i> TypeScript</div>
+                <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="tech-item"><i class="fas fa-server"></i> Express</div>
+                <div class="tech-item"><i class="fas fa-database"></i> PostgreSQL (Neon)</div>
+                <div class="tech-item"><i class="fas fa-cloud"></i> Vercel</div>
+                <div class="tech-item"><i class="fas fa-chart-bar"></i> Recharts</div>
+                <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-item"><i class="fas fa-lock"></i> JWT Auth</div>
+                <div class="tech-item"><i class="fab fa-react"></i> React</div>
+                <div class="tech-item"><i class="fab fa-js"></i> TypeScript</div>
+                <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge red">⚡ Challenge</span>
+                <h2 class="section-title">The Problem: A Broken Checkpoint</h2>
+                <p class="section-subtitle">Eastbrook's workflow has five steps. The failure point is step 3 — the verification checkpoint students skip under pressure while the school sees the risk too late to intervene.</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-robot"></i></div>
+                    <h4>🤖 Extreme Prompt Volume</h4>
+                    <p>14,119 AI prompts per day across 400 students. 35.3 prompts per student per day — routine, high-frequency AI dependence.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-times-circle"></i></div>
+                    <h4>⚠️ Weak Verification</h4>
+                    <p>Only 56% of AI outputs are independently checked. 44% accept without verification. At high task complexity, verification drops to 40.4%.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-eye"></i></div>
+                    <h4>😣 Physical Strain</h4>
+                    <p>8.6 hours screen time per day. Eye dryness at 7.1/10. Neck pain at 5.9/10. The harm is not only cognitive — it is physical and chronic.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-clock"></i></div>
+                    <h4>🕐 Late Educator Visibility</h4>
+                    <p>Staff see behavioral patterns reactively, after chronic risk has developed. There is no real-time signal for who needs a nudge today.</p>
+                </div>
+            </div>
+
+            <div class="stakeholders-section">
+                <h3 class="subsection-title"><i class="fas fa-users"></i> Who Is Affected</h3>
+                <div class="stakeholders-grid">
+                    <div class="stakeholder-card">
+                        <div class="stakeholder-emoji">👩‍🎓</div>
+                        <h4>Students</h4>
+                        <p>Directly affected by prompt volume, low verification, screen strain, and social-emotional AI use. The system is designed to protect both learning independence and well-being.</p>
+                    </div>
+                    <div class="stakeholder-card">
+                        <div class="stakeholder-emoji">👩‍🏫</div>
+                        <h4>Educators</h4>
+                        <p>Need earlier visibility into who is struggling, who needs nudges, and which behavior patterns signal rising dependence or physical strain.</p>
+                    </div>
+                    <div class="stakeholder-card">
+                        <div class="stakeholder-emoji">🏥</div>
+                        <h4>Counselors & Support Staff</h4>
+                        <p>Relevant once the case extends beyond coursework into emotional support, serious-topic AI use, and safeguarding — 33.2% of over-reliant students discuss serious topics with AI.</p>
+                    </div>
+                    <div class="stakeholder-card">
+                        <div class="stakeholder-emoji">🏛️</div>
+                        <h4>District &amp; Policy Stakeholders</h4>
+                        <p>Need evidence for healthier AI governance, device-use guidelines, and intervention policies that do not rely on blanket bans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-callout">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p><strong>The Core Risk:</strong> 23 dominant over-reliant students show 36.0% verification and 68.4% accept-without-checking. Inside that subgroup: 41.6% use AI for social messaging, 13.6% share PII. This is a safeguarding case, not just an academic productivity issue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge blue">🔍 Research</span>
+                <h2 class="section-title">What the Evidence Says</h2>
+                <p class="section-subtitle">The project is grounded in peer-reviewed theory and youth AI context research</p>
+            </div>
+
+            <div class="research-grid">
+                <div class="research-stat">
+                    <div class="stat-visual">
+                        <span class="big-number">44%</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="big-number">33%</span>
+                    </div>
+                    <p>Automation bias reduction after structured nudge intervention (modeled TO-BE outcome)</p>
+                </div>
+                <div class="research-stat">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45" style="--percent: 56"></circle>
+                        </svg>
+                        <span class="percent">56%</span>
+                    </div>
+                    <p>AS-IS verification rate. Lyell &amp; Coiera (2017) explain why people over-trust automated outputs when verification is effortful.</p>
+                </div>
+                <div class="research-stat">
+                    <div class="comparison-bars">
+                        <div class="bar-item">
+                            <span class="bar-label">TO-BE (Nudged)</span>
+                            <div class="bar" style="--width: 67%"><span>66.7%</span></div>
+                        </div>
+                        <div class="bar-item">
+                            <span class="bar-label">AS-IS (Baseline)</span>
+                            <div class="bar low" style="--width: 56%"><span>56.0%</span></div>
+                        </div>
+                    </div>
+                    <p>Verification rate improvement — Zhang et al. (2024) show outcomes worsen without independent checking</p>
+                </div>
+            </div>
+
+            <div class="research-additional">
+                <div class="research-stat-mini">
+                    <span class="stat-icon"><i class="fas fa-brain"></i></span>
+                    <span class="stat-value">3x</span>
+                    <span class="stat-desc">Higher automation bias when task complexity increases (Lyell &amp; Coiera)</span>
+                </div>
+                <div class="research-stat-mini">
+                    <span class="stat-icon"><i class="fas fa-mobile-alt"></i></span>
+                    <span class="stat-value">46%</span>
+                    <span class="stat-desc">US teens use AI for social-emotional tasks beyond schoolwork (Pew Research, 2025)</span>
+                </div>
+                <div class="research-stat-mini">
+                    <span class="stat-icon"><i class="fas fa-eye-slash"></i></span>
+                    <span class="stat-value">8.6 hrs</span>
+                    <span class="stat-desc">Average daily screen time linked to severe eye dryness &amp; neck strain (Rajani et al., 2022)</span>
+                </div>
+            </div>
+
+            <div class="benchmarks">
+                <h3 class="subsection-title"><i class="fas fa-book-open"></i> Theory Foundations</h3>
+                <div class="benchmark-cards">
+                    <div class="benchmark-card">
+                        <div class="university-logo" style="font-size:0.8rem;">A-Bias</div>
+                        <h4>Automation Bias</h4>
+                        <span class="benchmark-value">44%</span>
+                        <p>Lyell &amp; Coiera — over-trust in AI outputs drives the accept-without-checking behavior tracked in this dataset</p>
+                    </div>
+                    <div class="benchmark-card">
+                        <div class="university-logo" style="font-size:0.8rem;">Verif.</div>
+                        <h4>Verification Moderator</h4>
+                        <span class="benchmark-value">+10.7 pts</span>
+                        <p>Zhang et al. — AI outcomes worsen without verification; improving the check rate is the primary KPI lever</p>
+                    </div>
+                    <div class="benchmark-card">
+                        <div class="university-logo" style="font-size:0.8rem;">Youth</div>
+                        <h4>Youth Safeguards</h4>
+                        <span class="benchmark-value">13.6%</span>
+                        <p>APA &amp; UNICEF — child-centered AI guidance supports transparency, PII protection, and developmental-appropriate oversight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge green">🎯 Solution</span>
+                <h2 class="section-title">Eastbrook AI Platform</h2>
+                <p class="section-subtitle">Three role-based interfaces — one unified platform for students, educators, and analysts</p>
+            </div>
+
+            <div class="solution-content">
+                <div class="architecture-image">
+                    <img src="images/business-architecture.png" alt="Eastbrook Solution Architecture — Business, IS, and Technology layers">
+                    <div class="image-caption">
+                        <i class="fas fa-diagram-project"></i>
+                        Three-Column Architecture: Business Capabilities → IS Architecture (Applications + Data) → Technology Infrastructure
+                    </div>
+                </div>
+
+                <div class="architecture-layers-inline">
+                    <h3 class="subsection-title"><i class="fas fa-layer-group"></i> 🏗️ System Architecture — Three-Layer Design</h3>
+                    <p class="architecture-desc">Separation of concerns across business outcomes, IS applications, and cloud technology</p>
+                    <div class="architecture-layers">
+                        <div class="layer-card">
+                            <div class="layer-icon"><i class="fas fa-briefcase"></i></div>
+                            <h4>Business Architecture</h4>
+                            <p>Student AI interaction tracking, verification recommendations, wellness monitoring, policy analysis, data-driven insights, and educator reports</p>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-icon"><i class="fas fa-cubes"></i></div>
+                            <h4>IS Architecture</h4>
+                            <p>User behavior data (prompts, screen time, decision patterns), physical comfort metrics, demographic data, REST API, and Neon PostgreSQL data layer</p>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-icon"><i class="fas fa-code"></i></div>
+                            <h4>Tech. Infrastructure</h4>
+                            <p>Vercel Cloud, CDN Network, Serverless Functions, SSL/TLS Encryption, JWT-based Access Controls, Environment Variables</p>
+                        </div>
+                        <div class="layer-card">
+                            <div class="layer-icon"><i class="fas fa-tools"></i></div>
+                            <h4>Tools &amp; Platforms (SBB)</h4>
+                            <p>Node.js REST API, Python Data Engine, Neon PostgreSQL, Next.js / TypeScript Dashboard, Mobile Responsive, Recharts, NumPy/Pandas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="architecture-image" style="margin-top:40px;">
+                    <img src="images/tools-architecture.png" alt="Eastbrook Tools and Platforms Architecture — SBB diagram">
+                    <div class="image-caption">
+                        <i class="fas fa-tools"></i>
+                        Tools and Platforms Architecture (SBB) — full stack: Node.js → Python → Neon PostgreSQL · Recharts · NumPy/Pandas · JWT Auth · CrowdStrike
+                    </div>
+                </div>
+
+                <div class="features-showcase">
+                    <h3 class="subsection-title"><i class="fas fa-star"></i> 🔷 Three Role-Based Interfaces</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+                            <h4>1️⃣ Student Portal</h4>
+                            <p><strong>"See how your AI use compares to the class baseline"</strong><br>Students log AI sessions, view their own behavior against baseline, complete training modules, respond to nudges, and track personal well-being progress over time.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <h4>2️⃣ Educator Console</h4>
+                            <p><strong>"Tell me who needs attention before it becomes a problem"</strong><br>Educators review risk, track cohort trends, inspect roster patterns, and send targeted nudges — all before patterns become chronic or require escalation.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h4>3️⃣ Analyst Dashboard</h4>
+                            <p><strong>"Show me whether the intervention is actually working"</strong><br>Analysts filter by phase, age group, reliance type, and time range to test whether the intervention logic improves the defined KPIs across the full 12,000-observation dataset.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                            <h4>4️⃣ Nudge Engine</h4>
+                            <p><strong>25.6% measured positive effect</strong><br>Automated nudges target high-risk behavior patterns. When a student's verification rate drops below threshold or screen time exceeds limits, the system flags and notifies.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h4>5️⃣ AS-IS vs TO-BE Comparison</h4>
+                            <p><strong>Side-by-side KPI comparison view</strong><br>8 metrics compared across study phases: verification rate (+10.7 pts), automation bias (−10.7 pts), screen time (−0.8 hrs), eye dryness (−0.8), neck pain (−0.6).</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h4>6️⃣ Safeguarding Risk Flags</h4>
+                            <p><strong>JWT-secured role-based access</strong><br>Serious-topic AI use, PII-sharing, and emotional support requests are surfaced only to appropriate staff. Secure RBAC ensures student privacy is maintained.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-stack-detailed">
+                <h3 class="subsection-title"><i class="fas fa-cogs"></i> 🛠️ Technology Stack</h3>
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <i class="fab fa-react"></i>
+                        <div>
+                            <span>React + TypeScript</span>
+                            <small>Frontend UI</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-node-js"></i>
+                        <div>
+                            <span>Node.js + Express</span>
+                            <small>REST API backend</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-database"></i>
+                        <div>
+                            <span>PostgreSQL (Neon)</span>
+                            <small>Cloud database</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-cloud"></i>
+                        <div>
+                            <span>Vercel</span>
+                            <small>Auto-scaling deploy</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <span>Recharts</span>
+                            <small>Data visualisation</small>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-python"></i>
+                        <div>
+                            <span>Python</span>
+                            <small>Data generation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section class="data-section" id="data">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge purple">📊 Data</span>
+                <h2 class="section-title">Data Architecture</h2>
+                <p class="section-subtitle">Synthetic but deliberately structured — one row per student per day, designed to make AI behavior, health signals, and intervention logic measurable together</p>
+            </div>
+
+            <div class="data-content">
+                <div class="synthetic-data-info">
+                    <h3><i class="fas fa-shield-alt"></i> Why Synthetic Data?</h3>
+                    <div class="data-reasons">
+                        <div class="reason-card">
+                            <div class="reason-icon">🔒</div>
+                            <h4>Privacy First</h4>
+                            <p>No real student identities exposed. FERPA and GDPR compliant from day one. Safe for demonstrations, analysis, and academic research.</p>
+                        </div>
+                        <div class="reason-card">
+                            <div class="reason-icon">🧪</div>
+                            <h4>Realistic Behavior Patterns</h4>
+                            <p>Mimics actual student AI usage patterns. Phase-controlled design separates AS-IS from TO-BE. Enables before-after comparison with the same KPI framework.</p>
+                        </div>
+                        <div class="reason-card">
+                            <div class="reason-icon">📈</div>
+                            <h4>Built for Analysis</h4>
+                            <p>34 fields per row captures AI prompts, verification rates, strain metrics, reliance type, safeguarding signals, and nudge response — all in one structure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-overview">
+                    <h3><i class="fas fa-chart-pie"></i> Dataset Overview</h3>
+                    <div class="data-stats">
+                        <div class="data-stat-card">
+                            <i class="fas fa-users"></i>
+                            <span class="data-value">400</span>
+                            <span class="data-label">Students</span>
+                            <small>Four reliance types: appropriate, over, under, variable</small>
+                        </div>
+                        <div class="data-stat-card">
+                            <i class="fas fa-table"></i>
+                            <span class="data-value">12,000</span>
+                            <span class="data-label">Total Observations</span>
+                            <small>6,000 AS-IS + 6,000 TO-BE rows (15 days × 400 students)</small>
+                        </div>
+                        <div class="data-stat-card">
+                            <i class="fas fa-columns"></i>
+                            <span class="data-value">34</span>
+                            <span class="data-label">Fields per Row</span>
+                            <small>AI metrics, health scores, reliance type, safeguarding flags</small>
+                        </div>
+                        <div class="data-stat-card">
+                            <i class="fas fa-robot"></i>
+                            <span class="data-value">14,119</span>
+                            <span class="data-label">Daily Prompts (AS-IS)</span>
+                            <small>35.3 prompts per student per day at baseline</small>
+                        </div>
+                        <div class="data-stat-card">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="data-value">23</span>
+                            <span class="data-label">High-Risk Students</span>
+                            <small>Dominant over-reliant subgroup — 36.0% verification, 68.4% accept-without-check</small>
+                        </div>
+                        <div class="data-stat-card">
+                            <i class="fas fa-eye"></i>
+                            <span class="data-value">8.6 hrs</span>
+                            <span class="data-label">Daily Screen Time</span>
+                            <small>Eye dryness 7.1/10 · Neck pain 5.9/10 at baseline</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="erd-section">
+                    <img src="images/erd.png" alt="Entity Relationship Diagram — USER, USER_DAY, PHASE_CONFIG, VERIFICATION_COMPLEXITY_DIM, RELIANCE_TYPE_DIM">
+                    <div class="image-caption">
+                        <i class="fas fa-sitemap"></i>
+                        Entity Relationship Diagram — Core tables: USER ↔ USER_DAY (PK,FK: user_id + day) with phase, complexity, and reliance-type dimension tables
+                    </div>
+                </div>
+
+                <div class="data-flow-section" style="margin-top: 50px; padding: 40px 30px; background: linear-gradient(135deg, var(--gray-800) 0%, rgba(15, 76, 117, 0.1) 100%); border-radius: var(--radius-lg); border: 1px solid var(--gray-700);">
+                    <h3 class="subsection-title" style="color: var(--white); text-align: center; margin-bottom: 40px;"><i class="fas fa-stream"></i> ⚙️ Data Flow Architecture</h3>
+
+                    <div class="data-flow-container">
+                        <div class="flow-row">
+                            <div class="flow-card source">
+                                <div class="flow-icon"><i class="fab fa-python"></i></div>
+                                <h5>Python Generator</h5>
+                                <p>Synthetic Data</p>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+                            <div class="flow-card process">
+                                <div class="flow-icon"><i class="fas fa-file-csv"></i></div>
+                                <h5>CSV Dataset</h5>
+                                <p>12,000 rows · 34 fields</p>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+                            <div class="flow-card ui">
+                                <div class="flow-icon"><i class="fas fa-database"></i></div>
+                                <h5>Neon PostgreSQL</h5>
+                                <p>Production DB</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow-down"><i class="fas fa-long-arrow-alt-down"></i></div>
+
+                        <div class="flow-row features">
+                            <div class="flow-card feature">
+                                <div class="flow-icon"><i class="fas fa-user-graduate"></i></div>
+                                <h5>Student Portal</h5>
+                            </div>
+                            <div class="flow-card feature">
+                                <div class="flow-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                <h5>Educator Console</h5>
+                            </div>
+                            <div class="flow-card feature">
+                                <div class="flow-icon"><i class="fas fa-chart-line"></i></div>
+                                <h5>Analyst Dashboard</h5>
+                            </div>
+                            <div class="flow-card feature">
+                                <div class="flow-icon"><i class="fas fa-exchange-alt"></i></div>
+                                <h5>Comparison View</h5>
+                            </div>
+                        </div>
+
+                        <div class="flow-arrow-down"><i class="fas fa-long-arrow-alt-down"></i></div>
+
+                        <div class="flow-row">
+                            <div class="flow-card interaction">
+                                <div class="flow-icon"><i class="fas fa-hand-pointer"></i></div>
+                                <h5>User Actions</h5>
+                                <div class="interaction-tags">
+                                    <span>Login</span>
+                                    <span>Filter</span>
+                                    <span>Nudge</span>
+                                    <span>Compare</span>
+                                </div>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+                            <div class="flow-card database">
+                                <div class="flow-icon"><i class="fas fa-server"></i></div>
+                                <h5>Express REST API</h5>
+                                <p>JWT Auth · RBAC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge orange">📈 Evidence</span>
+                <h2 class="section-title">Dashboard &amp; Key Evidence</h2>
+                <p class="section-subtitle">Three charts from the AS-IS analysis that anchor the project's evidence base</p>
+            </div>
+
+            <!-- Chart: Daily Prompts -->
+            <div class="dashboard-feature">
+                <div class="feature-info">
+                    <h3><i class="fas fa-chart-line"></i> Evidence #1: Setup — Extreme Daily Volume</h3>
+                    <p class="feature-tagline"><em>"Students maintain extremely high daily AI interactions (&gt;14,000 prompts/day)"</em></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> <strong>14,119 total prompts per day</strong> across 400 students</li>
+                        <li><i class="fas fa-check"></i> <strong>35.3 prompts per student per day</strong> — routine, sustained usage</li>
+                        <li><i class="fas fa-check"></i> Consistent across all 15 observation days — no sign of self-regulation</li>
+                        <li><i class="fas fa-check"></i> Volume alone does not indicate harm — but combined with low verification, it becomes a risk signal</li>
+                    </ul>
+                    <div class="use-case-box">
+                        <strong>Why this matters:</strong><br>
+                        <em>"High prompt volume at low verification is the worst combination — students are offloading cognitive effort to AI at scale, but not checking the outputs."</em><br><br>
+                        <span class="before-after"><strong>Baseline:</strong> 14,119/day | <strong>TO-BE modeled:</strong> 11,871/day (−2,248)</span>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/chart-setup.png" alt="Setup chart: 14,119 daily AI prompts over 15 observation days">
+                </div>
+            </div>
+
+            <!-- Chart: Verification -->
+            <div class="dashboard-feature reverse">
+                <div class="feature-info">
+                    <h3><i class="fas fa-check-double"></i> Evidence #2: Conflict — Stagnant Verification</h3>
+                    <p class="feature-tagline"><em>"Despite high usage, independent fact-checking remains stagnant at ~56%"</em></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> <strong>56.0% average verification rate</strong> — barely above the midpoint</li>
+                        <li><i class="fas fa-check"></i> Flat trend across 15 days — students do not self-correct</li>
+                        <li><i class="fas fa-check"></i> At high complexity tasks: verification drops to <strong>40.4%</strong></li>
+                        <li><i class="fas fa-check"></i> 23 dominant over-reliant students: only <strong>36.0%</strong> verification</li>
+                    </ul>
+                    <div class="use-case-box">
+                        <strong>The intervention target:</strong><br>
+                        <em>"Verification is the core KPI lever. Zhang et al. (2024) confirm: AI learning outcomes improve when users actively check AI outputs."</em><br><br>
+                        <span class="before-after"><strong>AS-IS:</strong> 56.0% | <strong>TO-BE modeled:</strong> 66.7% (+10.7 pts)</span>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/chart-verification.png" alt="Conflict chart: verification rate stagnant at 56% across 15 days">
+                </div>
+            </div>
+
+            <!-- Chart: Physical Strain -->
+            <div class="dashboard-feature">
+                <div class="feature-info">
+                    <h3><i class="fas fa-heartbeat"></i> Evidence #3: Conflict — Persistent Physical Strain</h3>
+                    <p class="feature-tagline"><em>"Sustained unmoderated usage drives severe, persistent physical strain"</em></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> <strong>Eye dryness: 7.1/10</strong> average — well above comfortable threshold</li>
+                        <li><i class="fas fa-check"></i> <strong>Neck pain: 5.9/10</strong> average — chronic postural strain</li>
+                        <li><i class="fas fa-check"></i> Both metrics are flat across 15 days — no natural recovery</li>
+                        <li><i class="fas fa-check"></i> This is not a productivity problem — it is a student health problem</li>
+                    </ul>
+                    <div class="use-case-box">
+                        <strong>Health framing:</strong><br>
+                        <em>"Rajani et al. (2022) and NIPH (2024) connect sustained screen exposure directly to the severity levels measured in this dataset."</em><br><br>
+                        <span class="before-after"><strong>Eye AS-IS:</strong> 7.1 | <strong>TO-BE:</strong> 6.3 &nbsp;·&nbsp; <strong>Neck AS-IS:</strong> 5.9 | <strong>TO-BE:</strong> 5.3</span>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="images/chart-strain.png" alt="Conflict chart: eye dryness 7.1/10 and neck pain 5.9/10 across 15 observation days">
+                </div>
+            </div>
+
+            <!-- Key Insights -->
+            <h3 class="subsection-title" style="margin-top: 60px;"><i class="fas fa-chart-line"></i> 🎯 Key Dashboard Insights</h3>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <h4><i class="fas fa-chart-line"></i> Insight #1: Complexity Kills Verification</h4>
+                    </div>
+                    <div class="insight-content">
+                        <p><strong>The Finding:</strong> Verification drops from <strong>66.0%</strong> at low complexity to <strong>53.6%</strong> at medium and <strong>40.4%</strong> at high complexity. The risk intensifies exactly where independent checking is most critical.</p>
+                        <p><strong>Why it matters:</strong> High-stakes work (complex assignments) is where students most need to verify — and where they least do so. Educators should prioritise nudges at high-complexity task moments.</p>
+                        <span class="action-badge"><i class="fas fa-bullseye"></i> Action: Trigger nudges at assignment complexity thresholds</span>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <h4><i class="fas fa-users"></i> Insight #2: 23 Students Drive Disproportionate Risk</h4>
+                    </div>
+                    <div class="insight-content">
+                        <p><strong>The Finding:</strong> The dominant over-reliant subgroup of <strong>23 students</strong> shows 36.0% verification and 68.4% accept-without-checking. Within this group: 41.6% use AI for social messaging, 33.2% discuss serious topics, 13.6% share PII.</p>
+                        <p><strong>Why it matters:</strong> Targeted intervention on 23 students (5.75% of cohort) would address the highest-concentration risk — safeguarding, not just academic performance.</p>
+                        <span class="action-badge"><i class="fas fa-bullseye"></i> Action: Escalate 23-student subgroup to counsellors immediately</span>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-header">
+                        <h4><i class="fas fa-heartbeat"></i> Insight #3: Physical Strain is Already Chronic</h4>
+                    </div>
+                    <div class="insight-content">
+                        <p><strong>The Correlation:</strong> Average daily screen time is <strong>8.6 hours</strong>. Eye dryness averages <strong>7.1/10</strong> and neck pain <strong>5.9/10</strong> across all 15 observation days with no recovery signal.</p>
+                        <ul class="impact-list">
+                            <li>This is not acute — it is <strong>chronic and embedded</strong></li>
+                            <li>Physical harm tracks directly with prompt volume and screen time</li>
+                            <li>TO-BE modeled breaks: screen time drops to <strong>7.8 hrs</strong></li>
+                        </ul>
+                        <span class="action-badge"><i class="fas fa-bullseye"></i> Action: Enforce break nudges at 60-minute continuous-use thresholds</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPIs -->
+            <div class="kpis-section">
+                <h3 class="subsection-title"><i class="fas fa-tachometer-alt"></i> 📊 AS-IS Baseline Metrics</h3>
+                <div class="kpis-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-value" data-count="14119">0</div>
+                        <div class="kpi-label">Daily AI Prompts</div>
+                        <small>35.3 per student/day</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">56.0%</div>
+                        <div class="kpi-label">Verification Rate</div>
+                        <small>→ 66.7% in TO-BE model</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">44.0%</div>
+                        <div class="kpi-label">Automation Bias</div>
+                        <small>→ 33.3% in TO-BE model</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">7.1/10</div>
+                        <div class="kpi-label">Eye Dryness Score</div>
+                        <small>→ 6.3 in TO-BE model</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">25.6%</div>
+                        <div class="kpi-label">Nudge Success Rate</div>
+                        <small>Measured positive effect (TO-BE)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics Section -->
+    <section class="ethics-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge green">🔒 Ethics</span>
+                <h2 class="section-title">Ethics &amp; Responsible Design</h2>
+            </div>
+
+            <div class="ethics-grid">
+                <div class="ethics-card">
+                    <div class="ethics-icon"><i class="fas fa-user-shield"></i></div>
+                    <h4>🔐 Privacy &amp; PII Protection</h4>
+                    <p>PII-sharing risk is part of the harm model — 13.6% of over-reliant students share PII with AI. The platform treats privacy as a first-class concern, not an afterthought. Synthetic dataset = zero real student identities exposed.</p>
+                </div>
+                <div class="ethics-card">
+                    <div class="ethics-icon"><i class="fas fa-child"></i></div>
+                    <h4>🛡️ Safeguarding for Minors</h4>
+                    <p>Serious-topic AI use (33.2%) and emotional support requests mean the system must be framed as a student-safety tool, not merely a productivity dashboard. APA and UNICEF guidance informs the child-centered design.</p>
+                </div>
+                <div class="ethics-card">
+                    <div class="ethics-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h4>⚖️ Avoiding Overclaiming</h4>
+                    <p>The TO-BE phase represents modeled intervention logic, not completed live deployment. The portfolio is careful to frame outcomes as "projected" and "modeled" — not "achieved." All numbers are sourced from the verified dataset only.</p>
+                </div>
+                <div class="ethics-card">
+                    <div class="ethics-icon"><i class="fas fa-eye"></i></div>
+                    <h4>🔍 Transparency &amp; Responsible Tracking</h4>
+                    <p>Students should understand what is being tracked and why — not to ban AI use, but to support healthier habits, earlier intervention, and genuine learning independence. Monitoring is a support tool, not surveillance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes Section -->
+    <section class="outcomes-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge gold">🎯 Results</span>
+                <h2 class="section-title">AS-IS vs TO-BE: The Case for Intervention</h2>
+            </div>
+
+            <div class="outcomes-content">
+                <div class="achievements">
+                    <h3><i class="fas fa-trophy"></i> ✅ What the Project Demonstrates</h3>
+                    <ul class="achievement-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Validated Concept:</strong> Proved that combined AI behavior + health + reliance data can model intervention impact in a structured dataset</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Verification Improvement:</strong> TO-BE model shows 56.0% → 66.7% (+10.7 pts) under nudge-and-training intervention</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Bias Reduction:</strong> Automation bias drops from 44.0% to 33.3% when micro-verification prompts are active</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Physical Relief:</strong> Modeled breaks reduce screen time by 0.8 hrs, eye dryness by 0.8 pts, neck pain by 0.6 pts</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Nudge Effectiveness:</strong> 25.6% measured positive nudge success rate — a concrete, measurable outcome for policy justification</li>
+                    </ul>
+                </div>
+
+                <div class="long-term-impact">
+                    <h3><i class="fas fa-rocket"></i> Modeled KPI Change (AS-IS → TO-BE)</h3>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">+10.7 pts</span>
+                            <span class="metric-label">Verification Rate</span>
+                            <small>56.0% → 66.7%</small>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">−10.7 pts</span>
+                            <span class="metric-label">Automation Bias</span>
+                            <small>44.0% → 33.3%</small>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">−0.8 hrs</span>
+                            <span class="metric-label">Daily Screen Time</span>
+                            <small>8.6 hrs → 7.8 hrs</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <h3 class="subsection-title"><i class="fas fa-road"></i> 🚀 Project Roadmap</h3>
+                <div class="roadmap-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h4>Weeks 1-2: Problem Framing &amp; Charter</h4>
+                            <p>Problem definition, stakeholder scope, KPI selection, project charter. Team alignment on verification as the core modifiable behavior.</p>
+                            <small><strong>Status:</strong> ✅ Complete</small>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h4>Weeks 3-6: Dataset, ERD &amp; AS-IS Dashboard</h4>
+                            <p>ERD design, Python data generation (12,000 rows, 34 fields), AS-IS analytics dashboard deployed on Vercel, chart evidence extracted.</p>
+                            <small><strong>Status:</strong> ✅ Complete · Live at easterbook-youth-ai-dashboard.vercel.app</small>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h4>Weeks 7-8: MVP Platform &amp; Portfolio</h4>
+                            <p>React + Express + Neon app with three role-based interfaces, TO-BE comparison view, nudge logic, JWT auth, and this portfolio site.</p>
+                            <small><strong>Status:</strong> ✅ Complete · Live at eastbrook-ai-platform.vercel.app</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge purple">👥 Team</span>
+                <h2 class="section-title">Team &amp; Lessons Learned</h2>
+                <p class="section-subtitle">8-week project · Team 3 · Master's Research Assignment</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">TV</div>
+                    <h4>Tejaswini Vuppalapati</h4>
+                    <small>Project Manager — delivery, alignment, and presentation readiness</small>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">PS</div>
+                    <h4>Pavani Suthram</h4>
+                    <small>Business Analyst — research framing, KPI rationale, and problem-to-solution alignment</small>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">VS</div>
+                    <h4>Vardhan Sreepurushothama</h4>
+                    <small>Data Analyst — data structure, analysis logic, and evidence extraction</small>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">VK</div>
+                    <h4>Vinay</h4>
+                    <small>Technical Lead — enterprise architecture, system design, and implementation</small>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">AP</div>
+                    <h4>Arjun Penmatsa</h4>
+                    <small>Documentation Lead — portfolio storytelling, synthesis, and prototype pipeline</small>
+                </div>
+            </div>
+
+            <!-- RACI Table -->
+            <div style="margin-top: 60px; overflow-x: auto;">
+                <h3 class="subsection-title"><i class="fas fa-table"></i> RACI Matrix</h3>
+                <table style="width:100%; border-collapse:collapse; font-size:0.85rem; background:var(--gray-800); border-radius:var(--radius-md); overflow:hidden;">
+                    <thead>
+                        <tr style="background:var(--primary);">
+                            <th style="padding:12px 16px; text-align:left; color:var(--white);">Task</th>
+                            <th style="padding:12px 16px; text-align:center; color:var(--white);">Tejaswini</th>
+                            <th style="padding:12px 16px; text-align:center; color:var(--white);">Pavani</th>
+                            <th style="padding:12px 16px; text-align:center; color:var(--white);">Vardhan</th>
+                            <th style="padding:12px 16px; text-align:center; color:var(--white);">Vinay</th>
+                            <th style="padding:12px 16px; text-align:center; color:var(--white);">Arjun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid var(--gray-700);"><td style="padding:10px 16px; color:var(--gray-200);">Problem Definition</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700); background:rgba(255,255,255,0.02);"><td style="padding:10px 16px; color:var(--gray-200);">Research &amp; Theory</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700);"><td style="padding:10px 16px; color:var(--gray-200);">Project Charter</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700); background:rgba(255,255,255,0.02);"><td style="padding:10px 16px; color:var(--gray-200);">KPI Definition</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700);"><td style="padding:10px 16px; color:var(--gray-200);">Dataset &amp; AS-IS Analysis</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700); background:rgba(255,255,255,0.02);"><td style="padding:10px 16px; color:var(--gray-200);">Solution Design</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700);"><td style="padding:10px 16px; color:var(--gray-200);">TO-BE Simulation</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td></tr>
+                        <tr style="border-top:1px solid var(--gray-700); background:rgba(255,255,255,0.02);"><td style="padding:10px 16px; color:var(--gray-200);">Portfolio Site</td><td style="text-align:center; padding:10px; color:var(--accent-blue);">C</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--gray-400);">I</td><td style="text-align:center; padding:10px; color:var(--accent-gold);">R/A</td></tr>
+                    </tbody>
+                </table>
+                <p style="color:var(--gray-400); font-size:0.8rem; margin-top:10px;">R = Responsible · A = Accountable · C = Consulted · I = Informed</p>
+            </div>
+
+            <div class="lessons-grid" style="margin-top:60px;">
+                <div class="lesson-card">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    <h4>💡 The Case Expanded While We Built It</h4>
+                    <p>Started as a usage-tracking idea. Became a combined verification, health, and educator-intervention case once the dataset was analysed. Scope decisions shaped everything.</p>
+                </div>
+                <div class="lesson-card">
+                    <i class="fas fa-database"></i>
+                    <h4>📊 Data Design Shaped Product Design</h4>
+                    <p>Because the dataset captured prompts, verification, strain, and reliance together, the solution had to become role-based rather than single-user reporting.</p>
+                </div>
+                <div class="lesson-card">
+                    <i class="fas fa-check-double"></i>
+                    <h4>🎯 Accuracy Over Style</h4>
+                    <p>A major lesson: unify all numbers under one source hierarchy before designing the final portfolio. Drift from earlier drafts costs more time than it saves.</p>
+                </div>
+                <div class="lesson-card">
+                    <i class="fas fa-road"></i>
+                    <h4>🔬 Next Steps Are Practical</h4>
+                    <p>The next stage: live pilot testing, outcome validation with real school data, and refinement of nudge thresholds, safeguarding workflows, and intervention timing.</p>
+                </div>
+            </div>
+
+            <div class="challenges-callout">
+                <h4><i class="fas fa-mountain"></i> 🚧 Challenges &amp; Solutions</h4>
+                <p>
+                    <strong>Scope Creep:</strong> Dataset kept revealing new risks → MoSCoW prioritisation → focused on verification, strain, and safeguarding subgroup as core deliverables<br>
+                    <strong>Number Drift:</strong> Early drafts had inconsistent metrics → created METRIC_SOURCE_OF_TRUTH.json as single authoritative source for all KPIs<br>
+                    <strong>Overclaiming Risk:</strong> TO-BE phase tempting to over-interpret → strict framing as "modelled intervention outcomes" throughout all deliverables<br>
+                    <strong>Architecture Complexity:</strong> 3 interfaces × 3 roles → clear RACI matrix + separate role-gated routes enforced clean separation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge blue">📥 Resources</span>
+                <h2 class="section-title">Live Links &amp; Downloads</h2>
+            </div>
+
+            <div class="resources-grid">
+                <a href="https://easterbook-youth-ai-dashboard.vercel.app/" target="_blank" class="resource-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>📊 AS-IS Dashboard</h4>
+                </a>
+                <a href="https://eastbrook-ai-platform.vercel.app/" target="_blank" class="resource-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>🚀 Live App Platform</h4>
+                </a>
+                <a href="https://eastbrook-ai-platform.vercel.app/compare" target="_blank" class="resource-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h4>🔄 AS-IS vs TO-BE Comparison</h4>
+                </a>
+                <a href="https://eastbrook-ai-platform-dashboard-sol.vercel.app/" target="_blank" class="resource-card">
+                    <i class="fas fa-presentation-screen"></i>
+                    <h4>📽️ Slide Deck</h4>
+                </a>
+                <a href="https://github.com/Arjun2179/Easterbook-Youth-AI-Dashboard" target="_blank" class="resource-card">
+                    <i class="fab fa-github"></i>
+                    <h4>💾 GitHub — Dashboard Repo</h4>
+                </a>
+            </div>
+
+            <div class="final-thoughts" style="margin-top: 60px; text-align: center; padding: 40px; background: linear-gradient(135deg, var(--gray-800) 0%, var(--gray-900) 100%); border-radius: var(--radius-lg); border: 1px solid var(--gray-700);">
+                <h3 style="color: var(--accent-gold); margin-bottom: 20px; font-size: 1.5rem;">🎓 Final Thoughts</h3>
+                <blockquote style="color: var(--white); font-size: 1.2rem; font-style: italic; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    "The real problem is not AI use alone. It is the combination of high prompt volume, weak verification, visible strain, and late staff visibility."
+                </blockquote>
+                <p style="color: var(--gray-400); max-width: 700px; margin: 0 auto 30px;">
+                    Eastbrook's <strong>400 students</strong> represent every school navigating the AI-in-classroom question right now. With 12,000 observations, a live platform, and a modeled evidence case, this project gives Eastbrook — and any institution — a data-driven foundation to move from reaction to prevention.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <span style="background: rgba(16, 185, 129, 0.2); color: var(--accent-gold); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;"><i class="fas fa-check"></i> AS-IS Dashboard: Live</span>
+                    <span style="background: rgba(0, 163, 224, 0.2); color: var(--accent-blue); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;"><i class="fas fa-check"></i> Platform App: Live</span>
+                    <span style="background: rgba(255, 159, 64, 0.2); color: #fb923c; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;"><i class="fas fa-check"></i> Slide Deck: Live</span>
+                    <span style="background: rgba(107, 91, 149, 0.2); color: #a78bfa; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;"><i class="fas fa-check"></i> Portfolio: Complete</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <span>Eastbrook Youth AI Well-Being</span>
+                    </div>
+                <p class="footer-tagline">Making Student AI Use Visible, Safer, and Easier to Intervene On.</p>
+                <div class="footer-links">
+                    <a href="https://eastbrook-ai-platform.vercel.app/" target="_blank"><i class="fas fa-globe"></i> Live App</a>
+                    <a href="https://easterbook-youth-ai-dashboard.vercel.app/" target="_blank"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                    <a href="https://eastbrook-ai-platform-dashboard-sol.vercel.app/" target="_blank"><i class="fas fa-film"></i> Slide Deck</a>
+                    <a href="https://github.com/Arjun2179/Easterbook-Youth-AI-Dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://eastbrook-ai-platform.vercel.app/compare" target="_blank"><i class="fas fa-exchange-alt"></i> Comparison</a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Eastbrook Youth AI Well-Being · Team 3: Tejaswini, Pavani, Vardhan, Vinay &amp; Arjun</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
