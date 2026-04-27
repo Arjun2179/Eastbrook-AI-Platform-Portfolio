@@ -1095,15 +1095,15 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-xl);
     border: 1px solid var(--gray-700);
-    background: #fff;
+    background: transparent;
 }
 
 .architecture-image img {
     display: block;
     width: 100%;
     height: auto;
-    padding: 16px;
-    background: #fff;
+    padding: 0;
+    background: transparent;
 }
 
 .image-caption {
