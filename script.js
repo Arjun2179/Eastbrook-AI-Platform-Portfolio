@@ -158,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
         '.layer-card',
         '.ethics-card',
         '.metric',
-        '.timeline-item',
         '.team-member',
         '.lesson-card',
         '.resource-card',

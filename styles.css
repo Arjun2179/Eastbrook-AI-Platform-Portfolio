@@ -1064,14 +1064,6 @@ section {
     margin-top: 4px;
 }
 
-/* Timeline Enhanced */
-.timeline-content small {
-    display: block;
-    margin-top: 8px;
-    color: var(--accent-green);
-    font-size: 0.8rem;
-}
-
 /* Team Member Enhanced */
 .team-member small {
     display: block;
@@ -1884,51 +1876,6 @@ section {
     color: var(--gray-400);
 }
 
-.roadmap-timeline {
-    display: flex;
-    gap: 30px;
-}
-
-.timeline-item {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    background: var(--gray-800);
-    padding: 30px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--gray-700);
-    transition: var(--transition-normal);
-}
-
-.timeline-item:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary);
-}
-
-.timeline-marker {
-    width: 50px;
-    height: 50px;
-    background: var(--gradient-primary);
-    border-radius: var(--radius-full);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: var(--white);
-    font-size: 1.3rem;
-    flex-shrink: 0;
-}
-
-.timeline-content h4 {
-    color: var(--white);
-    margin-bottom: 8px;
-}
-
-.timeline-content p {
-    color: var(--gray-400);
-    font-size: 0.9rem;
-}
-
 /* ===============================================
    Future Development Section
    =============================================== */
@@ -2331,26 +2278,6 @@ section {
     flex-wrap: wrap;
 }
 
-.timeline-item-mini {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--gray-800);
-    padding: 12px 20px;
-    border-radius: var(--radius-md);
-}
-
-.timeline-item-mini .date {
-    color: var(--accent-blue);
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.timeline-item-mini .milestone {
-    color: var(--gray-300);
-    font-size: 0.85rem;
-}
-
 /* ===============================================
    Resources Section
    =============================================== */
@@ -2638,9 +2565,6 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .roadmap-timeline {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 768px) {
